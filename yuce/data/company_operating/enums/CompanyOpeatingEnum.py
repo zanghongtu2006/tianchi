@@ -28,18 +28,3 @@ class UnitCD(Enum):
     m2 = 'm2'
 
 
-INDICT_NAME_CN_EN_MAPPING = {
-    '白云机场: 飞机起降架次:当月值': 'Baiyun Airport: Aircraft take - off and landing times'
-}
-
-INDICT_NAME_EN_CN_MAPPING = {
-    'Baiyun Airport: Aircraft take - off and landing times': '白云机场: 飞机起降架次:当月值'
-}
-
-UNIT_CD_CN_EN_MAPPING = {
-    '架次': 'sortie'
-}
-
-UNIT_CD_EN_CN_MAPPING = {
-    'sortie': '架次'
-}
