@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import sys
 
 import xlrd
 
@@ -22,6 +21,5 @@ def read_excel():
 
 
 if __name__ == '__main__':
-    print(sys.path)
     for data in read_excel():
         print(data)
