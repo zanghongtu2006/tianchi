@@ -1,0 +1,142 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+
+@author: Hongtu Zang
+
+@contact: zanghongtu2006@gmail.com
+
+@file: Balance.py
+
+@time: 7/2/18 9:18 PM
+
+@desc:
+
+"""
+
+
+class GeneralBusiness:
+    party_id
+    ticker_symbol
+    exchange_cd
+    publish_date
+    end_date_rep
+    end_date
+    report_type
+    fiscal_period
+    merged_flag
+    cash_c_equiv
+
+    CASH_C_EQUIV
+    SETT_PROV
+    LOAN_TO_OTH_BANK_FI
+    DERIV_ASSETS
+    TRADING_FA
+    NOTES_RECEIV
+    AR
+    PREPAYMENT
+    PREMIUM_RECEIV
+    REINSUR_RECEIV
+    REINSUR_RESER_RECEIV
+    INT_RECEIV
+    DIV_RECEIV
+    OTH_RECEIV
+    PUR_RESALE_FA
+    INVENTORIES
+    ASSETS_HELD_FOR_SALE
+    NCA_WITHIN_1Y
+    OTH_CA
+    CAE
+    CAA
+    T_CA
+    DISBUR_LA
+    AVAIL_FOR_SALE_FA
+    HTM_INVEST
+    LT_RECEIV
+    LT_EQUITY_INVEST
+    INVEST_REAL_ESTATE
+    FIXED_ASSETS
+    CIP
+    CONST_MATERIALS
+    FIXED_ASSETS_DISP
+    PRODUC_BIOL_ASSETS
+    OIL_AND_GAS_ASSETS
+    INTAN_ASSETS
+    R_D
+    GOODWILL
+    LT_AMOR_EXP
+    DEFER_TAX_ASSETS
+    OTH_NCA
+    NCAE
+    NCAA
+    T_NCA
+    AE
+    AA
+    T_ASSETS
+    ST_BORR
+    CB_BORR
+    DEPOS
+    LOAN_FR_OTH_BANK_FI
+    TRADING_FL
+    DERIV_LIAB
+    NOTES_PAYABLE
+    AP
+    ADVANCE_RECEIPTS
+    SOLD_FOR_REPUR_FA
+    COMMIS_PAYABLE
+    PAYROLL_PAYABLE
+    TAXES_PAYABLE
+    INT_PAYABLE
+    DIV_PAYABLE
+    OTH_PAYABLE
+    REINSUR_PAYABLE
+    INSUR_RESER
+    FUNDS_SEC_TRAD_AGEN
+    FUNDS_SEC_UNDW_AGEN
+    LIAB_HELD_FOR_SALE
+    NCL_WITHIN_1Y
+    ACCRUED_EXP
+    OTH_CL
+    CLE
+    CLA
+    T_CL
+    LT_BORR
+    BOND_PAYABLE
+    PREFERRED_STOCK_L
+    PERPETUAL_BOND_L
+    LT_PAYABLE
+    LT_PAYROLL_PAYABLE
+    SPECIFIC_PAYABLES
+    ESTIMATED_LIAB
+    DEFER_REVENUE
+    DEFER_TAX_LIAB
+    OTH_NCL
+    NCLE
+    NCLA
+    T_NCL
+    LE
+    LA
+    T_LIAB
+    PAID_IN_CAPITAL
+    OTH_EQUITY_INSTR
+    PREFERRED_STOCK_E
+    PERPETUAL_BOND_E
+    CAPITAL_RESER
+    TREASURY_SHARE
+    OTH_COMPRE_INCOME
+    SPECIAL_RESER
+    SURPLUS_RESER
+    ORDIN_RISK_RESER
+    RETAINED_EARNINGS
+    FOREX_DIFFER
+    SEE
+    SEA
+    T_EQUITY_ATTR_P
+    MINORITY_INT
+    OTH_EFFECT_SE
+    OTH_EFFECT_SA
+    T_SH_EQUITY
+    LEE
+    LEA
+    T_LIAB_EQUITY

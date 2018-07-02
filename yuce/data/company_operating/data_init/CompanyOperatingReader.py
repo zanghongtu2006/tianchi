@@ -2,7 +2,7 @@
 
 import xlrd
 
-from yuce.data.company_operating.model.BaseCompanyOperating import BaseCompanyOperating
+from yuce.data.company_operating.model.CompanyOperating import CompanyOperating
 from yuce.data.constraint.Const import Const
 
 
@@ -15,7 +15,7 @@ def read_excel():
         if row == 0:
             continue
         row_data = sheet_data.row(row)
-        data = BaseCompanyOperating(row_data[0], row_data[1], row_data[2], row_data[3], row_data[4], row_data[5])
+        data = CompanyOperating(row_data[0], row_data[1], row_data[2], row_data[3], row_data[4], row_data[5])
         data_lst.append(data)
     return data_lst
 
