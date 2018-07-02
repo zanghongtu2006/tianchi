@@ -7,7 +7,7 @@
 
 @contact: zanghongtu2006@gmail.com
 
-@file: MacroIndustry.py
+@file: MarketData.py
 
 @time: 7/2/18 8:29 PM
 
