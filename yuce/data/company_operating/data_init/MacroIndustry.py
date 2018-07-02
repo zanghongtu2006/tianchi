@@ -24,24 +24,24 @@ def read_excel():
     workbook = xlrd.open_workbook(Const.file_new_macro_inststry_20180613)
     print(workbook.sheet_names())
     indic_info_sheet = workbook.sheet_by_name('INDIC_INFO')
-    info_list = []
+    indic_info_lst = []
     for row in range(indic_info_sheet.nrows):
         if row == 0:
             continue
         row_data = indic_info_sheet.row(row)
         indic_info = IndicInfo(row_data[0], row_data[1], row_data[2], row_data[3], row_data[4])
-        info_list.append(indic_info)
+        indic_info_lst.append(indic_info)
 
     indic_data_sheet = workbook.sheet_by_name('INDIC_DATA')
-    data_list = []
+    indic_data_lst = []
     for row in range(indic_data_sheet.nrows):
         if row == 0:
             continue
         row_data = indic_data_sheet.row(row)
         indic_data = IndicData(row_data[0], row_data[1], row_data[2], row_data[3], row_data[4])
-        data_list.append(indic_data)
+        indic_data_lst.append(indic_data)
 
-    return info_list, data_list
+    return indic_info_lst, indic_data_lst
 
 
 if __name__ == '__main__':
