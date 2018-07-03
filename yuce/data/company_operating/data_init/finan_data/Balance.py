@@ -23,7 +23,12 @@ def read_excel():
     workbook = xlrd.open_workbook(Const.file_finan_balance)
     print(workbook.sheet_names())
     market_data_sheet = workbook.sheet_by_name('General Business')
-    print(market_data_sheet.nrows, market_data_sheet.ncols)
+    general_business_lst = []
+    bank_lst = []
+    insurance_lst = []
+    securities_lst = []
+
+
     # market_data_lst = []
     # for row in range(market_data_sheet.nrows):
     #     if row == 0:
