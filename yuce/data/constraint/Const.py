@@ -11,6 +11,6 @@ class Const:
     file_new_market_data_20180613 = base_data_dir + '/[New] Market Data_20180613.xlsx'
 
     file_finan_balance = finan_data_dir + '/Balance Sheet.xls'
-    file_finan_cash_flow_statement = finan_data_dir + 'Cash Flow Statement.xls'
-    file_finan_data_dictionary = finan_data_dir + 'Data Dictionary_5.29.xlsx'
-    file_finan_incom_statement = finan_data_dir + 'Income Statement.xls'
+    file_finan_cash_flow_statement = finan_data_dir + '/Cash Flow Statement.xls'
+    file_finan_data_dictionary = finan_data_dir + '/Data Dictionary_5.29.xlsx'
+    file_finan_incom_statement = finan_data_dir + '/Income Statement.xls'
