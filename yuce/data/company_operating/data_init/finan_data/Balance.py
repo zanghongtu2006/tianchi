@@ -16,32 +16,42 @@
 """
 import xlrd
 
+from yuce.data.company_operating.model.finan_data.Balance import GeneralBusiness, Bank, Insurance, Securities
 from yuce.data.constraint.Const import Const
 
 
 def read_excel():
     workbook = xlrd.open_workbook(Const.file_finan_balance)
     print(workbook.sheet_names())
-    market_data_sheet = workbook.sheet_by_name('General Business')
+    general_business_sheet = workbook.sheet_by_name('General Business')
+    bank_sheet = workbook.sheet_by_name('Bank')
+    insurance_sheet = workbook.sheet_by_name('Insurance')
+    securities_sheet = workbook.sheet_by_name('Securities')
     general_business_lst = []
     bank_lst = []
     insurance_lst = []
     securities_lst = []
 
+    for row in range(1, general_business_sheet.nrows):
+        row_data = general_business_sheet.row(row)
+        general_business_lst.append(GeneralBusiness(row_data))
 
-    # market_data_lst = []
-    # for row in range(market_data_sheet.nrows):
-    #     if row == 0:
-    #         continue
-    #     row_data = market_data_sheet.row(row)
-    #     market_data = MarketData(row_data[0], row_data[1], row_data[2], row_data[3], row_data[4], row_data[5],
-    #                              row_data[6], row_data[7], row_data[8])
-    #     market_data_lst.append(market_data)
+    for row in range(1, bank_sheet.nrows):
+        row_data = bank_sheet.row(row)
+        bank_lst.append(Bank(row_data))
 
-    return market_data_lst
+    for row in range(1, insurance_sheet.nrows):
+        row_data = insurance_sheet.row(row)
+        insurance_lst.append(Insurance(row_data))
+
+    for row in range(1, securities_sheet.nrows):
+        row_data = securities_sheet.row(row)
+        securities_lst.append(Securities(row_data))
+
+    return general_business_lst, bank_lst, insurance_lst, securities_lst
 
 
 if __name__ == '__main__':
-    market_data_lst = read_excel()
-    for data in market_data_lst:
+    general_business_lst, bank_lst, insurance_lst, securities_lst = read_excel()
+    for data in general_business_lst:
         print(data)
