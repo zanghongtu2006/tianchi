@@ -16,7 +16,7 @@
 """
 import xlrd
 
-from yuce.data.company_operating.model.MarketData import MarketData
+from yuce.data.company_operating.model.orig.MarketData import MarketData
 from yuce.data.constraint.Const import Const
 
 

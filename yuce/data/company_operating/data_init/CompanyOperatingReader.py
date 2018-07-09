@@ -2,7 +2,7 @@
 
 import xlrd
 
-from yuce.data.company_operating.model.CompanyOperating import CompanyOperating
+from yuce.data.company_operating.model.orig.CompanyOperating import CompanyOperating
 from yuce.data.constraint.Const import Const
 
 

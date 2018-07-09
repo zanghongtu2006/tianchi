@@ -16,7 +16,7 @@
 """
 import xlrd
 
-from yuce.data.company_operating.model.finan_data.CashFlowStatement import GeneralBusiness, Bank, Insurance, Securities
+from yuce.data.company_operating.model.orig.finan_data.CashFlowStatement import GeneralBusiness, Bank, Insurance, Securities
 from yuce.data.constraint.Const import Const
 
 

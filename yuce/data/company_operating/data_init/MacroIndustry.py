@@ -16,7 +16,7 @@
 """
 import xlrd
 
-from yuce.data.company_operating.model.MacroIndustry import IndicInfo, IndicData
+from yuce.data.company_operating.model.orig.MacroIndustry import IndicInfo, IndicData
 from yuce.data.constraint.Const import Const
 
 
